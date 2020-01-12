@@ -10,5 +10,7 @@ This app currently accepts two different commands that are intended to import fr
 - `node importProducts.js capterra feed-products/capterra.yaml`
 
 
-********************************************************************************************8
+********************************************************************************************
+
+
 Please find the SQL queries in the DataBase_Code folder. 
