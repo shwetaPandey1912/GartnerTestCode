@@ -1,14 +1,13 @@
 'use strict';
 
-const YAML = require('yamljs'); // use a tool to import yaml files
-
+const YAML = require('yamljs'); 
 function loadData(url) {
   return YAML.load(url);
 }
 exports.loadData = loadData;
 
 
-// Normalize data, as the two different sources have different formats (title ≈ name, tags ≈ categories, twitter ≈ @twitter)
+
 function normalizeData(product) {
   const normalizedProduct = {
     name: product.name.replace(/(^|\s)\S/g, l => l.toUpperCase()),

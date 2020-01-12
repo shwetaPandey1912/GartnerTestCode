@@ -6,7 +6,7 @@ function loadData(url) {
 exports.loadData = loadData;
 
 
-// Normalize data, as the two different sources have different formats (title ≈ name, tags ≈ categories, twitter ≈ @twitter)
+
 function normalizeData(product) {
   const normalizedProduct = {
     name: product.title.replace(/(^|\s)\S/g, l => l.toUpperCase()),
